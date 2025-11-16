@@ -2,7 +2,7 @@
   <img src="#">
 </p>
 
-# Tabela de Conteúdos
+# Conteúdo
 <!--ts-->
   * [Sobre](#sobre)
   * [Instalação](#instalação)
