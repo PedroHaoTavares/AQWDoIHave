@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>AQW Eu Tenho { OPÇÕES };</title>
+
+    <style>
+        body {
+            background-color:#eddfbc;
+            margin: 0;
+            text-align:center;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        /* ----- TOPO ----- */
+        header {
+            background-color:#3b0b0f;
+            color:#ffffff;
+            padding: 25px 0;
+            box-shadow: 0px 5px 15px #0f0f0f;
+        }
+
+        header .title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #f2f2f2;
+        }
+
+        /* ----- BLOCOS DE OPÇÃO ----- */
+        .block {
+			max-width: 600px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color:#3b0b0f;
+            color:#f2f2f2;
+            font-size: 18px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .block input {
+            margin-left: 15px;
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+        }
+
+        /* ----- BOTÕES ----- */
+        .button {
+			max-width: 600px;
+            background-color:#3b0b0f;
+            border: none;
+            color: #f2f2f2;
+            padding: 18px;
+            margin: 20px auto;
+            font-size: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+            transition: transform 0.20s ease, background-color 0.20s ease;
+            display: block;
+			width: 100%;
+        }
+
+        .button:hover {
+            background-color: #81030e;
+            color: white;
+            transform: scale(1.08);
+        }
+
+        .button:active {
+            background-color:#000000;
+            color: #a2f2f2;
+        }
+
+        /* ----- RODAPÉ ----- */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color:#3b0b0f;
+            color:white;
+            padding: 10px 0;
+            font-weight: 700;
+            box-shadow: 2px -4px 15px #0f0f0f;
+        }
+
+        #link {
+            background-color:#0d1117;
+            border: 1px solid #0d1117;
+            border-radius: 8px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="title">AQW Eu Tenho { OPÇÕES };</div>
+</header>
+
+<main>
+
+    <div class="block">
+        Ver mais informações
+        <input type="checkbox" id="like">
+    </div>
+
+    <div class="block">
+        {WIP} AQWWIKI Dark Mode
+        <input type="checkbox" id="dark_mode">
+    </div>
+    <button class="button" id="export">Exportar Itens da conta em JSON</button>
+    <div id="status"></div>
+
+    <button class="button" id="save">Salvar</button>
+
+</main>
+
+<script src="js/option.js"></script>
+
+<footer>
+    Created by Hao 
+    <a id="link" style="color:#ffffff;" 
+       href="https://github.com/DragoNext/AqwDoIhave">Github</a>
+
+    <a id="link" 
+       style="color:#f0f0f0;background-color:#002f83;border-color:#002f83;"
+       href="https://www.paypal.com/donate/?hosted_button_id=4K6AFGLC66YMG">
+       PayPal
+    </a>
+</footer>
+
+</body>
+</html>
